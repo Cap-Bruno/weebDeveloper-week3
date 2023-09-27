@@ -1,0 +1,189 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Oxygen', sans-serif;
+}
+
+svg {
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+#body {
+    background-color: #61122f;
+    color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+#header-nav {
+    background-color: #f6b319;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.navbar-brand {
+    padding-top: 20px;
+}
+
+.navbar-brand h2 {
+    font-family: 'Exo 2', sans-serif;
+    color: #000000;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.navbar-brand a {
+    text-decoration: none;
+}
+
+.navbar-brand p {
+    color: #000;
+    text-transform: uppercase;
+    font-size: .7em;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+.navbar-toggle {
+    border: none;
+    background-color: #f6b319;
+}
+
+.nav-list-pai {
+    width: 100%;
+}
+
+#nav-list {
+    margin-top: 10px;
+    align-items: center;
+}
+
+#nav-list {
+    width: 100%;
+    text-align: center;
+    border: 2px solid black;
+}
+
+#nav-list li {
+    width: 100%;
+}
+
+#nav-list li:nth-child(2) {
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+#nav-list a {
+    color: #951C49;
+    text-align: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+#nav-list li:hover {
+    background-color: #E7E7E7;
+}
+
+#nav-list a span {
+    font-size: 1.6em;
+}
+
+.navbar-header button.navbar-toggle {
+    margin-top: -35px;
+}
+
+
+/* ==== STYLE DO MANI DA PAGINA */
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+}
+
+p {
+    margin-top: 5px;
+    padding: 0px 10px 10px 10px;
+}
+
+.bloco {
+    background-color: rgb(168, 167, 167);
+    border: 2px solid black;
+    width: 100%;
+    align-items:  center;
+    margin-right: 10px;
+}
+
+.bloco h3 {
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+/* ===== RESPONSIVIDADE */
+
+/* Dispositivos grandes */
+@media(min-width: 1200px) {
+    .rows{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+    
+}
+
+/* Dispositivos medios */
+@media(min-width: 992px) and (max-width: 1199px) {
+    
+    .rows{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+    }
+}
+
+/* Dispositivos pequenos */
+@media(min-width: 768px) and (max-width:991px) {
+
+    .rows{
+        display: flex;
+    }
+
+    .bloco {
+        margin-bottom: 15px;
+        width: 50%;
+    }
+}
+
+/* Dispositivos muito pequenos */
+@media(min-width: 566px) and (max-width: 767px) {
+    .rows{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #row{
+        width: 48%;
+    }
+    #row3{
+        width: 98%;
+    }
+}
